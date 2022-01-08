@@ -1,24 +1,39 @@
-header p{
+body {
+    margin: 0;
+  }
+.body_page{
+    display: grid;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 0px;
+   
+}
+h1{
     font-size: 1.5em;
     font-weight: bold;
-    background-color: teal;
+
     color: white;
     height: 50px;
     text-align: left;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 0%;
-    margin-bottom: 0px;
+
 
 }
-img{
-    float: right;
-width: 150px;
-margin-top: 0px;
+header img{
+border-style: none;    
+float: right;
+width: 120px;
+margin: 10px;
 }
 
-h1{
+h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,15 +41,13 @@ ul li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-footer p{
+footer{
     
     background-color: teal;
     color: white;
-    height: 50px;
     text-align: center;
     border-radius: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 footer p a{

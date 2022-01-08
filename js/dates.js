@@ -1,0 +1,1 @@
+const modified = document.querySelector('#Modified').innerHTML = `Last Updated: ${document.lastModified}`;
