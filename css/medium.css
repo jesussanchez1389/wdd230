@@ -1,8 +1,8 @@
-body {
-    margin: 0;
-  }
+@media (min-width: 32.5em){
 .body_page{
+    margin: 0 auto;
     display: grid;
+
 }
 
 header {
@@ -17,7 +17,8 @@ header {
    
 }
 h1{
-    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
     font-weight: bold;
 
     color: white;
@@ -34,7 +35,7 @@ margin: 10px;
 }
 
 h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul li{
@@ -54,4 +55,5 @@ footer p a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
 }
