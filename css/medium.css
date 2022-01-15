@@ -1,59 +1,39 @@
 @media (min-width: 32.5em){
-.body_page{
-    margin: 0 auto;
-    display: grid;
-
-}
+    .body_page{
+        max-width: 800px;
+    }
 
 header {
-    display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 20px;
-    align-items: center;
-    background-color: teal;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 0px;
    
 }
 h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
 
-    color: white;
-    height: 50px;
+    font-size: 3em;
     text-align: left;
 
 
 }
-header img{
-border-style: none;    
+header img{   
 float: right;
 width: 120px;
 margin: 10px;
 }
 
 h2{
-    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 10px;
 }
 
 ul li{
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 footer{
     
-    background-color: teal;
-    color: white;
-    text-align: center;
     border-radius: 10px;
     padding: 10px;
-}
-
-footer p a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
 }
 }
