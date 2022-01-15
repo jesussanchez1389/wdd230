@@ -1,0 +1,134 @@
+body{
+    height: 100vh;
+}
+header{
+    background-color: #EB5922;
+    border-radius: 10px 10px 0 0;
+    padding: 1em;
+}
+h1 , h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    
+}
+
+main {
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+
+main section p{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 22px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+ 
+
+}
+main section a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+
+main section h3 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color:#9E320B;
+    margin-top: 0%;
+    border-radius: 5px 5px 0 0;
+    padding: 3px;
+    text-align: center;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+    background-color: #ffd9cb;
+    border-radius: 5px 5px 0 0;
+}
+section picture img{
+    width: 80%;
+
+}
+
+main section:nth-child(2) {
+	margin: 0.5rem;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #EB5922;
+    border-radius: 0 0 10px 10px;
+    height: 7%;
+
+}
+
+
+footer p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+    header{
+        border-radius: 20px 20px 0 0;
+    }
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section picture {
+        display: block;
+    
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+    }
+    footer{
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+    }
+    
+}
