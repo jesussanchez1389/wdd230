@@ -1,8 +1,9 @@
-@media only screen and (min-width: 52.5em) {
+@media only screen and (min-width: 60.5em) {
     body{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
+        width: 1200px;
     }
     header {
         grid-column: 1/5;
