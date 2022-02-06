@@ -1,8 +1,8 @@
 
-const menubutton = document.querySelector('.menu');
+const menuButton = document.querySelector('.menu');
 const mainnav = document.querySelector('.navigation')
 
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+menuButton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
 // To solve the mid resizing issue with responsive class on
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
@@ -16,11 +16,11 @@ const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 const year = now.getFullYear();
 document.querySelector('#year').innerHTML = `${year}`;
-
+document.querySelector("#modified").textContent = `Last Modification: ${document.lastModified}`;
 // long, medium, short options ... try them
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
-document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+
 
 
