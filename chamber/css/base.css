@@ -134,6 +134,14 @@ main{
 	padding: 30px;
 	background-color: lightgray;
 }
+
+#hero picture{
+	height: 127px;
+}
+
+#hero picture img{
+	height: 100%;
+}
 #event{
 	grid-row: 2/3;
 	padding: 30px;
