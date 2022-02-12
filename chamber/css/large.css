@@ -3,7 +3,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        width: 1200px;
+        max-width: 1530px;
+        height: 1150px;
     }
     header {
         grid-column: 1/5;
@@ -32,7 +33,7 @@
 		display: flex;
 	}
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 auto;
 	}
 	.navigation a {
@@ -43,7 +44,9 @@
 	}
 
     .social{
-        float: right;
+        position: absolute;
+        top: 1/3rem;
+        right: 1.5rem;
     }
 
     main{
