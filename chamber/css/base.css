@@ -29,21 +29,20 @@ header {
 }
 
 .headings {
-	display: flex;
-	flex-direction: column;
-	margin-left: .5rem;
+	text-align: center;
     
 }
 
 .headings h1 {
     font-family: 'Oswald', sans-serif;
-	font-size: 1.5rem;
+	font-size: 35px;
     margin-bottom: auto;
+
 }
 
 .sub_heading {
     font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
+	font-size: 25px;
     font-weight: bold;
     margin: auto;
 }
@@ -122,6 +121,13 @@ main{
 	grid-row: 2/14;
 	width: 100%;
 }
+#hero h2{
+	position: absolute;
+	top: 2%;
+	left: 5%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+}
 .content{
 	display: grid;
 	grid-template-rows: repeat(6, 1fr);
@@ -131,36 +137,56 @@ main{
 
 #hero{
 	grid-row: 1/2;
-	padding: 30px;
-	background-color: lightgray;
+	position: relative;
 }
 
 #hero picture{
-	height: 127px;
+	width: 100%;
+	margin: 0;
 }
 
 #hero picture img{
-	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+#hero_buttom{
+	position: absolute;
+	bottom: 15%;
+	right: 10%;
+	background-color: darkcyan;
+	color: #eee;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	padding: 20px;
+	border-radius: 20px;
+
 }
 #event{
 	grid-row: 2/3;
+	background-color:steelblue;
 	padding: 30px;
-	background-color: lightgray;
 }
+#event h2{
+	font-family: 'Oswald', sans-serif;
+	color: #eee;
+	font-size: 30px;
+	margin: 20px;
+}
+
 #weather{
 	grid-row: 3/4;
 	padding: 30px;
-	background-color: lightgray;
+	background-color:steelblue;
 }
 #release{
 	grid-row: 4/5;
 	padding: 30px;
-	background-color: lightgray;
+	background-color:steelblue;
 }
 #spotlight{
 	grid-row: 5/7;
 	padding: 30px;
-	background-color: lightgray;
+	background-color:steelblue;
 }
 .sp1, .sp2{
 	display: block;
@@ -178,7 +204,7 @@ footer{
 }
 #logo_footer{
 	margin: 10px;
-	width: 3em;
+	width: 200px;
 }
 
 footer a{

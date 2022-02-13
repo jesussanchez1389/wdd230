@@ -9,34 +9,30 @@
     header {
         grid-column: 1/5;
         grid-row: 1/2;
-        border-bottom: 1px solid #bbb;
+        display: flex;
+        position: relative;
     }
     
-    
-    .headings h1 {
-        font-size: 2rem;
-        margin: 0;
-        }
-    
-    .sub_heading {
-        letter-spacing: 1.5pt;
-        font-size: 0.9rem;
-        }
+    .headings{
+        text-align: left;
+    }
     
     nav {
 	margin: 0 auto;
     width: 60%;
 	background-color: gray;
+
     }
 
-	.navigation {
-		display: flex;
-	}
+    .navigation{
+        display: flex;
+    }
 	.navigation li {
 		display: block;
 		flex: 1 1 auto;
 	}
 	.navigation a {
+        font-size: 30px;
 		text-align: center;
 	}
 	.navigation li:first-child {
@@ -45,14 +41,30 @@
 
     .social{
         position: absolute;
-        top: 1/3rem;
-        right: 1.5rem;
+        top: 1rem;
+        right: 5rem;
+    }
+
+    #today_date{
+        position: absolute;
+        top:85%;
+        width:90%;
+        
+    }
+    .date {
+        margin: -0.5rem 2rem -0.5rem 1.3rem;
+
     }
 
     main{
         grid-column: 1/5;
         grid-row: 2/5;
         width: 100%;
+    }
+
+    #hero h2{
+
+        left: 5%;
     }
     .content{
         display: grid;
@@ -65,42 +77,39 @@
     #hero{
         grid-column: 2/4;
         grid-row: 1/3;
-        padding: 30px;
-        background-color: lightgray;
     }
-    #hero picture{
-        height: 375px;
+
+    #hero picture img{
+        height: 100%;
     }
     #event{
         grid-column: 1/2;
         grid-row: 1/2;
         padding: 30px;
-        background-color: lightgray;
     }
     #weather{
         grid-column: 1/2;
         grid-row: 2/3;
         padding: 30px;
-        background-color: lightgray;
+  
     }
     #release{
         grid-column: 2/4;
         grid-row: 3/4;
         padding: 30px;
-        background-color: lightgray;
+    
     }
 
     #join{
         grid-column: 1/2;
         grid-row: 3/4;
-        background-color: lightgray;
+
     }
 
     #spotlight{
         grid-column: 4/5;
         grid-row: 1/4;
         padding: 30px;
-        background-color: lightgray;
     }
     .sp1, .sp2, .sp3{
         display: block;
@@ -111,6 +120,8 @@
         grid-column: 1/5;
         grid-row: 5/6;
         background-color: gray;
+        display: flex;
+        margin-top: 20px;
     }
 }
 
