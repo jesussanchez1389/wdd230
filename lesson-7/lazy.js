@@ -16,6 +16,7 @@ const loadImages = (image) => {
         }
       });
     });
+
     imagesToLoad.forEach((img) => {
       observer.observe(img);
     });
@@ -24,7 +25,3 @@ const loadImages = (image) => {
       loadImages(img);
     });
   }
-
-  imagesToLoad.forEach((img) => {
-    loadImages(img);
-  });
