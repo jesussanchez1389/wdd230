@@ -22,5 +22,51 @@ document.querySelector("#modified").textContent = `Last Modification: ${document
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
 
+// Days between visits
+const visit = document.querySelector('.visits');
+
+const lastvisit = localStorage.getItem('lastvisit');
+
+const FACTOR = 1000 * 60 * 60 * 24;
+
+let daysbetween = Date.now() - lastvisit;
+console.log(daysbetween);
+
+let numberoOfDays = daysbetween/FACTOR;
+
+localStorage.setItem('lastvisit', Date.now());
+
+visit.textContent = numberoOfDays;
+
+// lazy load
+let imagesToLoad = document.querySelectorAll('img[data-src]');
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
+};
+
+
+  if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if(item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    });
+
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+  } else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+  }
+
+
 
 

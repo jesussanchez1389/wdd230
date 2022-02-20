@@ -1,5 +1,6 @@
 html{
 	min-width: 370px;
+	height: 100%;
 }
 body {
 	display: grid;
@@ -115,12 +116,28 @@ nav {
 	background-color: #eee;
 }
 
+.visits {
+	font-family: 'Roboto', sans-serif;
+	margin: 5px;
+}
+
 
 main{
 	grid-column: 1;
 	grid-row: 2/14;
 	width: 100%;
 }
+
+#discover_gallery picture{
+	display: inline-block;
+}
+
+#discover_gallery figcaption{
+	margin-bottom: 20px;
+	
+	
+}
+
 #hero h2{
 	position: absolute;
 	top: 2%;
@@ -201,6 +218,7 @@ footer{
 	grid-row: 14/18;
 	background-color: gray;
 	text-align: center;
+	
 }
 #logo_footer{
 	margin: 10px;

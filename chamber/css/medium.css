@@ -104,11 +104,20 @@
         margin: -0.5rem 1rem;
         background-color: #eee;
     }
+
+    .visits {
+        margin: -0.5rem 3rem;
+        padding: 2rem;
+    }
     
     
     main{
         grid-row: 2/7;
         width: 100%;
+    }
+
+    #discover_gallery picture img:hover{
+        box-shadow: 0 0 50px aquamarine;
     }
  
     .content{

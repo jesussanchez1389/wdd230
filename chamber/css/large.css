@@ -56,6 +56,11 @@
 
     }
 
+    .visits {
+        margin: -0.5rem 2rem -0.5rem 1.3rem;
+
+    }
+
     main{
         grid-column: 1/5;
         grid-row: 2/5;
