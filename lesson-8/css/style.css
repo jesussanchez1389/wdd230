@@ -1,0 +1,63 @@
+table{
+    border-collapse: collapse;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.colh{
+    width: 100%;
+    border: 1px solid lightgrey;
+    background-color: lightblue;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+table, th, td{
+    border: 1px solid lightgrey;
+    text-align: center;
+}
+
+td, th{
+    padding: 10px 5px;
+}
+
+td{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.col1, .col2, .col3{
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.col1{
+    width: 35%;
+}
+
+.col2{
+    width: 20%;
+}
+
+.complete{
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lavender;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightcyan;
+}
+
+.frow{
+    background-color: lightblue;
+}
