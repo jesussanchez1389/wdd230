@@ -10,6 +10,16 @@ body {
 	height: 2150px;
 }
 
+h1{
+	font-family: 'Oswald', sans-serif;
+
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
 header {
 	grid-column: 1;
 	grid-row: 1/2;
@@ -63,6 +73,9 @@ header {
 #twitter{
 	padding: 10px;
 }
+a{
+	text-decoration: none;
+}
 nav {
 	display: flex;
 	font-family: 'Oswald', sans-serif;
@@ -96,6 +109,7 @@ nav {
 	color: white;
 	background-color: black;
 }
+
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
@@ -171,13 +185,20 @@ main{
 	bottom: 15%;
 	right: 10%;
 	background-color: darkcyan;
-	color: #eee;
-	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
 	padding: 20px;
 	border-radius: 20px;
 
+
 }
+
+#hero_buttom a{
+	text-decoration: none;
+	color: #eee;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	
+}
+
 #event{
 	grid-row: 2/3;
 	background-color:steelblue;
@@ -218,6 +239,7 @@ footer{
 	grid-row: 14/18;
 	background-color: gray;
 	text-align: center;
+	margin: 0;
 	
 }
 #logo_footer{
@@ -228,4 +250,78 @@ footer{
 footer a{
 	text-decoration: none;
 	color: black;
+}
+
+
+
+/*Format for the form*/
+#join_page{
+	height: 3000px;
+}
+#join_form{
+	width: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color:steelblue;
+	
+}
+
+#join_form h1{
+	padding: 30px;
+}
+
+fieldset{
+	width: 80%;
+	border-radius: 5px;
+	margin: 30px auto;
+	background-color: #eee;
+}
+
+fieldset legend{
+	font-family: 'Oswald', sans-serif;
+	background-color: gray;
+	padding: 5px;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+	
+
+
+.info input, .contact input, .bussiness input, textarea{
+	display: block;
+	margin-bottom: 30px;
+	min-height: 44px;
+	width: 75%;
+}
+
+
+#membership label{
+	display: block;
+	margin: 20px;
+	text-align: left;
+}
+
+
+#membership input{
+	min-height: 5px;
+	margin: 10px 5px;
+}
+
+.membership_price{
+	margin: 30px;
+	background-color: cadetblue;
+	padding: 5px 10px;
+	border: 1px solid black;
+}
+
+#join_buttom{
+	margin: 5% 40%;
+	padding: 10px 50px;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	background-color: palegreen;
+
+
 }

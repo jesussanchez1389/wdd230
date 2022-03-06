@@ -153,6 +153,20 @@
         grid-column: 1/4;
         grid-row: 4/5;
         background-color:steelblue;
+        padding: 15px 30px;
+    }
+
+    #join a h2{
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+	    color: #eee;
+	    font-size: 30px;
+	    margin: 20px;
+    }
+
+    #join a img{
+        height: 70%;
+        
     }
     #spotlight{
         grid-column: 1/4;
@@ -172,6 +186,10 @@
     }
 
     footer div{
-        margin-top: 10px;
+        padding-top: 10px;
     }
+    /*Format for the form*/
+#join_page{
+	height: 2500px;
+}
 }

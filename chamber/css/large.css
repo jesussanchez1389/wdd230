@@ -41,8 +41,8 @@
 
     .social{
         position: absolute;
-        top: 1rem;
-        right: 5rem;
+        top: 4rem;
+        right: 2rem;
     }
 
     #today_date{
@@ -108,6 +108,7 @@
     #join{
         grid-column: 1/2;
         grid-row: 3/4;
+        padding: 30px;
 
     }
 
@@ -126,7 +127,12 @@
         grid-row: 5/6;
         background-color: gray;
         display: flex;
-        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+ 
+    #join_page{
+        height: 3000px;
     }
 }
 

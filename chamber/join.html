@@ -13,9 +13,9 @@
 <script defer src="js/javascript.js"></script>
   <title>Chamber of commerce of Pereira Site</title>
 </head>
-<body>
+<body id="join_page">
   
-    <header>
+    <header id="head_join">
         <div class="logo">
             <picture>
                 <img src="images/logo.png" alt="Chamber of commerce of Pereira logo">
@@ -46,40 +46,36 @@
         <date class="date"></date>
         </div>
     </header>
-    <main>
-        <div class="content">
-            <section id="hero">
-                <h2>Welcome to Pereira</h2>
-                <picture>
-                    <source media="(max-width: 519px)" srcset="images/pereira_small_500w.jpg">
-                    <source media="(max-width: 967px)" srcset="images/pereira_medium_900w.jpg">
-                    <source media="(max-width: 1530px)" srcset="images/pereira_wide_1500w.jpg">
-                    <img src="images/pereira_wide_1500W.jpg" alt="A view from Pereira City">
-                </picture>
-                <button id="hero_buttom"><a href="join.html"> Join the Chamber</a></button>    
-            </section>
-            <section id="event">
-                <h2>Event</h2>
-                <img src="images/event.png">
-            </section>
-            <section id="weather">
-                <h2>Weather</h2>
-            </section>
-            <section id="release">
-                <h2>New Releases</h2>
-            </section>
-            <section id="join">
-                <a class="join_link" href="join.html"><h2> Join</h2>
-                <img src="images/join.png" alt="two people working together"></a>
-            </section>
-            <section id=spotlight>
-                <span class="sp1">Spotlight 1</span>
-                <span class="sp2">Spotlight 2</span>
-                <span class="sp3">Spotlight 3</span>
-            </section>
-        </div>
+    <main id="join_form">
+        <h1>Join to the Chamber of Commerce</h1>
+        <form action="thanks.html" method="get">
+            <fieldset class="info">
+                <legend>Personal Information</legend>
+                <label>First Name<input type="text" name="fname" required class="input_required"></label>
+                <label>Last Name<input type="text" name="lname" required class=""></label>
+            </fieldset>
+            <fieldset class="contact">
+                <legend>Contact Information</legend>
+                <label>Email<input type="email" name="email" required class="input_required" placeholder="example@email.com"></label>
+                <label>Cell Phone Number<input type="tel" name="phone" required placeholder="123-4567-78" class="input_required"></label>
+            </fieldset>
+            <fieldset class="bussiness">
+                <legend>Bussiness Information</legend>
+                <label>Bussiness Name<input type="text" name="bname" required class="input_required"></label>
+                <label>Bussiness Position<input type="text" name="bposition" pattern="[a-zA-Z] {7}" ></label>
+                <label>Bussiness Description <textarea name="bdescription" cols="30" rows="10"></textarea> </label>  
+            </fieldset>
+            <fieldset id="membership">
+                <legend>Membership level</legend>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="NP">Non-Profit Membership <span class="membership_price">$0</span></label>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="bronze">Bronze Membership<span class="membership_price">$200</span></label>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="silver">Silver Membership<span class="membership_price">$400</span></label>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="gold">Gold Membership<span class="membership_price">$800</span></label>
+            </fieldset>
+            <input type="submit" value="Join now" id="join_buttom">
+        </form>
     </main>
-    <footer>
+    <footer id="footer_join">
         <picture>
             <img id="logo_footer" src="images/logo.png" alt="Chamber of commerce of Pereira logo">
         </picture>
