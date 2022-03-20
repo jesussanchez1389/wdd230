@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/large.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 <script defer src="js/javascript.js"></script>
+<script defer src="js/hidden.js "></script>
   <title>Chamber of commerce of Pereira Site</title>
 </head>
 <body id="join_page">
@@ -38,8 +39,8 @@
                 <li><a class="menu" href="#"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover/discover.html">Discover</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
         </nav>
         <div id="today_date">
@@ -67,11 +68,17 @@
             </fieldset>
             <fieldset id="membership">
                 <legend>Membership level</legend>
-                <label class="lbottom"><input type="radio" name="membership_level" required value="NP">Non-Profit Membership <span class="membership_price">$0</span></label>
-                <label class="lbottom"><input type="radio" name="membership_level" required value="bronze">Bronze Membership<span class="membership_price">$200</span></label>
-                <label class="lbottom"><input type="radio" name="membership_level" required value="silver">Silver Membership<span class="membership_price">$400</span></label>
-                <label class="lbottom"><input type="radio" name="membership_level" required value="gold">Gold Membership<span class="membership_price">$800</span></label>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="NP">Non-Profit Membership <span class="membership_price">$0</span> <p>Your Non-Profit will be
+                    listed on our online directory.</p> </label>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="bronze">Bronze Membership<span class="membership_price">$200</span> <p>You have a 15% discount with all providers registeres in the chamber.
+                    events section of the chamber's website.</p> </label>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="silver">Silver Membership<span class="membership_price">$400</span> <p>You have the benefits of "Bronze" level and you can to publish once a month in our events section.
+                    news sections of the chamber's website</p> </label>
+                <label class="lbottom"><input type="radio" name="membership_level" required value="gold">Gold Membership<span class="membership_price">$800</span> <p>You have the benefits of "Silver" level and have 2 consulting sessions with our
+                    marketing department. Your company will appears in our spotlights section.
+                </p> </label>
             </fieldset>
+            <input type="hidden" name="dateTime" id="dateTime" value="" />
             <input type="submit" value="Join now" id="join_buttom">
         </form>
     </main>

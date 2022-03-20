@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/large.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 <script defer src="js/javascript.js"></script>
-<script defer src="js/windchill.js"></script>
+<script defer src="js/directory.js" ></script>
   <title>Chamber of commerce of Pereira Site</title>
 </head>
 <body>
@@ -47,52 +47,14 @@
         <date class="date"></date>
         </div>
     </header>
-    <main>
-        <div class="content">
-            <section id="hero">
-                <h2>Welcome to Pereira</h2>
-                <picture>
-                    <source media="(max-width: 519px)" srcset="images/pereira_small_500w.jpg">
-                    <source media="(max-width: 967px)" srcset="images/pereira_medium_900w.jpg">
-                    <source media="(max-width: 1530px)" srcset="images/pereira_wide_1500w.jpg">
-                    <img src="images/pereira_wide_1500W.jpg" alt="A view from Pereira City">
-                </picture>
-                <button id="hero_buttom"><a href="join.html"> Join the Chamber</a></button>    
-            </section>
-            <section id="event">
-                <h2>Event</h2>
-                <img src="images/event.png">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deserunt impedit ducimus minima. Consectetur</p>
-            </section>
-            <section id="weather">
-                <h2>Weather</h2>
-                <div class="conditions"></div>
-                <p><span id="description"></span></p>
-                <hr>
-                <div class="wind">
-                    <p>Wind Speed: <span id="windSpeed"></span> mph</p>
-                    <p>Wind Chill: <span id="windChill"></span></p>
-                 </div>
-            </section>
-            <section id="release">
-                <h2>New Releases</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laborum sequi veritatis eos exercitationem laudantium facilis ad blanditiis rerum id eius quam ipsa quidem, sit eligendi earum reprehenderit quaerat ipsum.</p>
-            </section>
-            <section id="join">
-                <a class="join_link" href="join.html"><h2> Join</h2>
-                <img src="images/join.png" alt="two people working together"></a>
-            </section>
-            <section id=spotlight>
-                <div class="sp1"><h3>Felis Nulla Limited</h3>
-                    <img src="images/companies/1.png" alt="company 1 logo">    
-                </div>
-                <div class="sp2"><h3>Eros Nam Consulting</h3>
-                    <img src="images/companies/2.png" alt="company 2 logo">
-                </div>
-                <div class="sp3"><h3>Mollis PC</h3>
-                    <img src="images/companies/3.png" alt="company 3 logo">
-                </div>
-            </section>
+    <main id="directory_main">
+        <h2>Business Directory</h2>
+        <div class="listButtons">
+            <button id="listView"><img src="images/list.png" alt="list icon"> </button>
+            <button id="gridView"> <img src="images/grid.png" alt="grid icon"> </button>
+        </div>
+        <div class="directoryList">
+            <div class="dirCards"></div>
         </div>
     </main>
     <footer>

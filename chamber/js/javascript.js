@@ -23,49 +23,63 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 
 
 // Days between visits
-const visit = document.querySelector('.visits');
+let lastVisit = document.querySelector('.visits');
 
-const lastvisit = localStorage.getItem('lastvisit');
-
+const lastvisit = Number(localStorage.getItem('lastvisit'));
 const FACTOR = 1000 * 60 * 60 * 24;
 
-let daysbetween = Date.now() - lastvisit;
-console.log(daysbetween);
+// Subtract the last visit from the current visit or time
+const currentvisit = Date.now() - lastvisit;
 
-let numberoOfDays = daysbetween/FACTOR;
+const daysbetween = currentvisit / FACTOR;
 
-localStorage.setItem('lastvisit', Date.now());
+const visitAgain = `Hi! ${Math.round(daysbetween)} days have passed since your last time.`
+const firstTime = 'Welcome, This is your first time here. Enjoy!'
 
-visit.textContent = numberoOfDays;
+// display to the page how many days since the user's last visit
+if (lastvisit !== 0) {
+  lastVisit.textContent = visitAgain;
+} else {
+  lastVisit.textContent = firstTime;
+}
+
+localStorage.setItem('lastvisit', Date.now())
 
 // lazy load
 let imagesToLoad = document.querySelectorAll('img[data-src]');
+
+
+const imgOptions = {
+  rootMargin: '0px 0px 50px 0px',
+  threshold: 1,
+}
+
+
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
   image.onload = () => {
     image.removeAttribute('data-src');
-  };
-};
-
-
-  if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if(item.isIntersecting) {
-          loadImages(item.target);
-          observer.unobserve(item.target);
-        }
-      });
-    });
-
-    imagesToLoad.forEach((img) => {
-      observer.observe(img);
-    });
-  } else {
-    imagesToLoad.forEach((img) => {
-      loadImages(img);
-    });
   }
+}
+
+
+if('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if(item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    })
+   }, imgOptions)
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  })
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  })
+}
 
 
 

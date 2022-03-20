@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(7, 1fr);
-        height: 1670px;
+        height: 2000px;
     }
     header {
         grid-row: 1/2;
@@ -174,7 +174,6 @@
     }
     .sp1, .sp2{
         display: inline-block;
-        border: 1px solid black;
         height: 100%;
         padding-left:20px ;
         padding-right: 2em;

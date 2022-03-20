@@ -4,7 +4,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
         max-width: 1530px;
-        height: 1150px;
+        height: 1270px;
     }
     header {
         grid-column: 1/5;
@@ -90,7 +90,13 @@
     #event{
         grid-column: 1/2;
         grid-row: 1/2;
-        padding: 30px;
+
+    }
+
+    #event p{
+        height: 20%;
+        overflow: scroll;
+        margin-bottom: 2%;
     }
     #weather{
         grid-column: 1/2;
@@ -119,15 +125,14 @@
     }
     .sp1, .sp2, .sp3{
         display: block;
-        border: 1px solid black;
         height: 33%;
     }
     footer{
         grid-column: 1/5;
-        grid-row: 5/6;
+        grid-row: 6;
         background-color: gray;
         display: flex;
-        padding-top: 20px;
+        padding-top: 2%;
     }
 
  
@@ -135,4 +140,11 @@
         height: 3000px;
     }
 }
+
+
+.dirList section {
+    display: flex;
+    justify-content: space-between;
+  }
+
 

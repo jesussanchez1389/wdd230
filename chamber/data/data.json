@@ -1,0 +1,88 @@
+{
+    "businesses": [
+        {
+            "name": "Felis Nulla Limited",
+            "address": "P.O. Box 767, 2956 Lorem Av.",
+            "phone": "1-587-628-6560",
+            "email": "in.ornare.sagittis@yahoo.net",
+            "imgfile": "images/companies/1.png" 
+        },
+        {
+            "name": "Eros Nam Consulting",
+            "address": "Ap #512-9800 Nullam Ave",
+            "phone": "(455) 241-4449",
+            "email": "sit.amet@outlook.org",
+            "imgfile": "images/companies/2.png"
+        },
+        {
+            "name": "Mollis PC",
+            "address": "Ap #387-7446 Ornare, Street",
+            "phone": "1-684-253-2933",
+            "email": "orci.phasellus@aol.net",
+            "imgfile": "images/companies/3.png"
+        },
+        {
+            "name": "In Tincidunt LLP",
+            "address": "198-9159 Nisi Avenue",
+            "phone": "1-281-761-7288",
+            "email": "etiam.laoreet.libero@google.edu",
+            "imgfile": "images/companies/4.png"
+        },
+        {
+            "name": "Vel Venenatis Corporation",
+            "address": "Ap #376-9393 Nam Rd.",
+            "phone": "(440) 201-8796",
+            "email": "fringilla.porttitor.vulputate@protonmail.ca",
+            "imgfile": "images/companies/5.png"
+        },
+        {
+            "name": "Eu Sem LLC",
+            "address": "P.O. Box 302, 5828 Ut Rd.",
+            "phone": "1-349-216-5138",
+            "email": "vulputate.ullamcorper@outlook.net",
+            "imgfile": "images/companies/6.png"
+        },
+        {
+            "name": "Nisi Mauris Corp.",
+            "address": "Ap #974-9622 Et St.",
+            "phone": "1-757-275-7682",
+            "email": "dis.parturient@hotmail.couk",
+            "imgfile": "images/companies/7.png"
+        },
+        {
+            "name": "Egestas Aliquam Industries",
+            "address": "1295 Euismod Av.",
+            "phone": "(132) 817-7585",
+            "email": "volutpat.nulla@protonmail.org",
+            "imgfile": "images/companies/8.png"
+        },
+        {
+            "name": "Leo LLC",
+            "address": "P.O. Box 121, 3474 Vestibulum Ave",
+            "phone": "1-365-832-8154",
+            "email": "euismod.ac@google.net",
+            "imgfile": "images/companies/9.png"
+        },
+        {
+            "name": "Orci Luctus Et PC",
+            "address": "1240 Et Av.",
+            "phone": "(426) 846-7851",
+            "email": "magna.phasellus@yahoo.com",
+            "imgfile": "images/companies/10.png"
+        },
+        {
+            "name": "Ligula Consectetuer Rhoncus LLC",
+            "address": "Ap #534-2324 Luctus St.",
+            "phone": "(717) 114-1259",
+            "email": "tortor.nunc@hotmail.org",
+            "imgfile": "images/companies/11.png"
+        },
+        {
+            "name": "In Lorem Institute",
+            "address": "P.O. Box 664, 3981 Luctus, Street",
+            "phone": "1-831-807-5354",
+            "email": "molestie.tellus.aenean@hotmail.edu",
+            "imgfile": "images/companies/12.png"
+        }
+    ]
+}
