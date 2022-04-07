@@ -1,0 +1,35 @@
+{
+    "temples": [
+        {
+            "name": "Accra Ghana Temple",
+            "address": "Accra Ghana Temple Complex 57 Independence Ave, North RidgeP.M.B. CT 209",
+            "phone": "(233) 302-650-123",
+            "url": "https://www.churchofjesuschrist.org/temples/details/accra-ghana-temple?lang=eng",
+            "imgfile": "images/ghana.jpg" 
+        },
+
+        {
+            "name": "Columbia River Washington Temple",
+            "address": "969 Gage Blvd Richland WA 99352-7777 United States",
+            "phone": "(1) 509-628-0990",
+            "url": "https://www.churchofjesuschrist.org/temples/details/columbia-river-washington-temple?lang=eng",
+            "imgfile": "images/columbia.png" 
+        },
+
+        {
+            "name": "Arequipa Peru Temple",
+            "address": "Calle Cusco 380 Carmen Alto Distrito De Cayma Arequipa, Arequipa, Peru",
+            "phone": "(51) 54-640-300",
+            "url": "https://www.churchofjesuschrist.org/temples/details/arequipa-peru-temple?lang=eng",
+            "imgfile": "images/peru.png" 
+        },
+
+        {
+            "name": "Bern Switzerland Temple",
+            "address": "Tempelstrasse 2 CH-3052 Zollikofen Switzerland",
+            "phone": "(41) 31-915-5252",
+            "url": "https://www.churchofjesuschrist.org/temples/details/bern-switzerland-temple?lang=eng",
+            "imgfile": "images/bern.png" 
+        }
+    ]
+}

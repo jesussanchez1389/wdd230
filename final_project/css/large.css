@@ -1,0 +1,113 @@
+@media only screen and (min-width: 1080px){
+    html{
+        height: 1170px;
+    }
+    header{
+        font-size: 2rem;
+        height: 200px;
+        text-align: center;
+    }
+    
+    
+    header img{
+        height: 130px;
+        left: 10px;
+        top: 25%;
+    
+    }
+    
+    
+    #navigation a.active::after{
+        width: 80%;
+        left: 10%;
+    }
+
+
+    .hero_img{
+        height: 300px;
+        justify-content: space-between;
+    }
+
+    #social_media{
+        background: #333;
+        display: flex;
+        height: 100px;
+    }
+
+    #social_media section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    #social_media a{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+
+    #social_media img {
+        height: 60px;
+        margin-right: 10px;
+      
+    }
+
+    #social_media section a{
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        color: antiquewhite;
+    } 
+
+
+    .ads{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+    }
+    #ad3{
+        display: flex;
+    }
+
+    .ads img{
+        border-radius: 100px;
+        width: 200px;
+    }
+
+    .ads a{
+
+        width: 44%;
+        height: 35px;
+        border-radius: 7px;
+        padding-top: 10px;
+    }
+
+    
+    #weather{
+        font-size: 20px;
+        height: 300px;
+    }
+
+    
+     footer .modification{
+         bottom: 15%;
+         left: 35%;
+     }
+
+        /*success message*/
+        #success_message{
+        height: 350px;
+        font-size: 30px;
+        }
+        /*Format Contact page*/
+        .suite_img{
+        height: 400px;
+    }
+
+}

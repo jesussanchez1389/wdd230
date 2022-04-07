@@ -1,0 +1,178 @@
+@media only screen and (min-width: 768px){
+    html{
+        height: 1670px;
+    }
+    header{
+        font-size: 1.5rem;
+        text-align: right;
+        height: 150px;
+    }
+    header img{
+        height: 80%;
+        left: 10px;
+        top: 10%;
+    
+    }
+    header h1{
+        bottom: 10%;
+    }
+    
+
+    #navigation{
+        display: flex;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: #8BEA62;
+        font-size: 20px;
+        height: 50px;
+        justify-content: space-between;
+    }
+    
+    #navigation a{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:black;
+        border-right: 2px solid black;
+        position: relative;
+        height: 50px;
+    }
+     #navigation a.active::after{
+        content: "";
+        height: 5px;
+        width: 90%;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    }
+
+
+    .hero_img{
+        height: 0px;
+    }
+    #temple_ad{
+        margin: 10px;
+        height: 200px;
+    }
+
+    #ad3{
+        display: none;
+    }
+    .ads{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+    }
+    
+    
+    .ads img{
+        border-radius: 85px;
+        width: 170px;
+    }
+    
+    .ads a{
+        position: absolute;
+
+        width: 45%;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 15px;
+        font-style: italic;
+    }
+    
+    
+     #temple_ad button{
+        right: 3%;
+    
+    }
+
+    #weather{
+        font-size: 20px;
+        height: 250px;
+        margin: 30px auto 0;
+       
+    }
+
+
+    #weather #forecast{
+        display: flex;
+    }
+
+
+    .contact a{
+        font-size: 30px;
+
+    }
+
+
+    footer{
+        height: 320px;
+        padding: 30px;
+    }
+     footer #map a{
+         font-size: 20px;
+     }
+    
+     #social_links a img{
+         width: 70px;
+     }
+    
+     #form a{
+         font-size: 30px;
+     }
+    
+     footer .modification{
+         font-size: 15px;
+         bottom: 30%;
+         left: 25%;
+     }
+/*Format to form*/
+#reserve_content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+#reserve_form, #reserve_img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#reserve_img{
+    overflow: hidden;
+    width: 50px;
+}
+
+/*success message*/
+#success_message{
+    text-align: left;
+    height: 300px;
+    margin: 50px 20px;
+    font-size: 25px;
+}
+
+/*additional services*/
+#additional{
+    height: 110px;
+}
+/*Format Contact page*/
+.suite_img{
+    height: 350px;
+}
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,419 @@
+ html{
+     height: 1870px;
+ }
+  header{
+    background-color: #27660C;
+    font-family: 'Leckerli One', cursive;
+    font-size: 15px;
+    color: antiquewhite;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+header img, header h1{
+    display: inline-block;
+
+}
+header h1{
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+}
+
+
+header img{
+    height: 40%;
+    position: absolute;
+    left: 5px;
+    top: 25%;
+
+
+}
+
+
+#navigation{
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #8BEA62;
+    font-size: 20px;
+    height: auto;
+}
+
+#navigation a{
+    display: block;
+    color:black;
+    text-align: center;
+    border-bottom: 2px solid antiquewhite;
+    position: relative;
+    height: 50px;
+}
+ #navigation a.active::after{
+     content: "";
+     height: 5px;
+     width: 100%;
+     background: black;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+ } 
+
+ .hero_img {
+     height: 150px;
+     overflow: hidden;
+ }
+
+ .hero_img picture img{
+     width: 100%;
+ }
+
+ #social_media{
+     display: none;
+ }
+
+
+ #temple_ad{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px;
+    height: 250px;
+}
+#ad3{
+    display: none;
+}
+
+.ads{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+.ads img{
+    border-radius: 50px;
+    width: 100px;
+}
+
+.ads a{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 55%;
+    height: 25px;
+    border-radius: 10px;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    font-style: italic;
+}
+
+
+ #temple_ad button{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    background-color: #253D1A;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid ;
+
+}
+
+#temple_ad button a{
+    color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#weather #forecast{
+    display: none;
+}
+#weather{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #8BEA62;
+    font-size: 15px;
+    justify-content: space-between;
+    height: 225px;
+}
+#weather section:nth-child(even){
+    background-color: #253D1A;
+}
+#weather section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #fff;
+}
+
+#weather #current_weather{
+    display: block;
+    text-align: center;
+
+}
+
+
+.contact a{
+    color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+
+footer{
+    background-color: #333;
+    height: 220px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+ footer #map a{
+     color: antiquewhite;
+     font-size: 13px;
+ }
+
+ #social_links a img{
+     width: 50px;
+     margin: 10px 20px;
+ }
+
+ #form a{
+     color: antiquewhite;
+     font-size: 20px;
+ }
+
+ footer .modification{
+     color: antiquewhite;
+     font-size: 10px;
+     position: absolute;
+     bottom: 10%;
+     left: 20%;
+ }
+
+ /*Format to Temple List*/
+
+ #temple_list h2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+}
+
+.listButtons{
+	display: flex;
+    justify-content: center;
+}
+
+#listView, #gridView{
+    margin: 20px;
+}
+#listView img, #gridView img{
+	width: 20px;
+}
+
+.dcard {
+    border: 2px solid #333;
+	border-radius: 5px;
+    }
+  
+  .dcard p {
+	margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .dcard a{
+      color: black;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+  }
+  
+  .dcard p:nth-child(2) {
+	display: block;
+  }
+  
+  .dcard img {
+	width: 20%;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  .dirList section {
+	display: block;
+	text-align: left;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    background-color: #333;
+    margin: 20px 0 ;
+  }
+  
+  .dirList section:nth-child(even) {
+	background-color: #fff;
+    color: black;
+  }
+  
+  .dirList img {
+	display: none;
+  }
+  
+  .dirList p:nth-child(2) {
+	display: contents;
+  }
+
+  .card {
+     
+	width: 17em;
+	background-color: white;
+	border-radius: 5px;
+	overflow: hidden;
+    
+  }
+  
+  .card p {
+	padding: 0.8em;
+	border-top: 2px solid #333;
+    
+  }
+  
+  .card img {
+	width: 90%;
+	display: block;
+	margin: 0.8rem auto;
+  }
+  
+
+  .directoryCards{
+	margin: 5px auto;
+	display: inline;
+    width:  40%;
+    
+  }
+
+  /*Format to form*/
+#reserve_form{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+  #join_form h1{
+	padding: 30px;
+}
+
+fieldset{
+	width: 80%;
+	border-radius: 5px;
+	margin: 30px auto;
+	background-color: #eee;
+}
+
+fieldset legend{
+	font-family: 'Ubuntu', sans-serif;
+	background-color: gray;
+	padding: 5px;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+	
+
+
+.input_required{
+	display: block;
+	margin-bottom: 30px;
+	min-height: 44px;
+	width: 75%;
+}
+
+#reserve_button{
+    background: #27660C;
+    color: antiquewhite;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#reserve_img{
+    display: none;
+}
+
+/*success message*/
+#success_message{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    height: 250px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/*services*/
+.service_head{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 30px;
+    font-size: 30px;
+}
+
+#list_content{
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px;
+    
+}
+
+#special_service ul, #free_service ul{
+    font-size: 20px;
+    font-weight: bold;
+}
+#special_service ul li, #free_service ul li{
+    font-size: 15px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+#additional{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #8BEA62;
+    justify-content: space-between;
+    height: 225px;
+}
+
+#additional section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #fff;
+
+}
+
+#additional section:nth-child(even){
+    background-color: #253D1A;
+}
+#additional section a{
+    color: black;
+    font-size: 25px;
+}
+#additional section:nth-child(even) a{
+    color: antiquewhite;
+}
+/*Format Contact page*/
+.suite_img{
+    height: 250px;
+    overflow: hidden;
+}
+.suite_img picture img{
+    width: 100%;
+}
